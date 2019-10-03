@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32017B92234654AB006EFC56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32017B91234654AB006EFC56 /* AppDelegate.swift */; };
+		32017B94234654AB006EFC56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32017B93234654AB006EFC56 /* ViewController.swift */; };
+		32017B97234654AB006EFC56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32017B95234654AB006EFC56 /* Main.storyboard */; };
+		32017B9A234654AB006EFC56 /* PersistenciaCD_BD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 32017B98234654AB006EFC56 /* PersistenciaCD_BD.xcdatamodeld */; };
+		32017B9C234654AC006EFC56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32017B9B234654AC006EFC56 /* Assets.xcassets */; };
+		32017B9F234654AC006EFC56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32017B9D234654AC006EFC56 /* LaunchScreen.storyboard */; };
+		32017BAA234654AC006EFC56 /* PersistenciaCD_BDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32017BA9234654AC006EFC56 /* PersistenciaCD_BDTests.swift */; };
+		32017BB5234654AD006EFC56 /* PersistenciaCD_BDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32017BB4234654AD006EFC56 /* PersistenciaCD_BDUITests.swift */; };
+		32BD2A612346985000671848 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BD2A602346985000671848 /* TableViewController.swift */; };
+		32BD2A632346A1C300671848 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BD2A622346A1C300671848 /* EditViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		32017BA6234654AC006EFC56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32017B86234654AB006EFC56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32017B8D234654AB006EFC56;
+			remoteInfo = PersistenciaCD_BD;
+		};
+		32017BB1234654AD006EFC56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32017B86234654AB006EFC56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32017B8D234654AB006EFC56;
+			remoteInfo = PersistenciaCD_BD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		32017B8E234654AB006EFC56 /* PersistenciaCD_BD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersistenciaCD_BD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32017B91234654AB006EFC56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		32017B93234654AB006EFC56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		32017B96234654AB006EFC56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		32017B99234654AB006EFC56 /* PersistenciaCD_BD.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PersistenciaCD_BD.xcdatamodel; sourceTree = "<group>"; };
+		32017B9B234654AC006EFC56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		32017B9E234654AC006EFC56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		32017BA0234654AC006EFC56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32017BA5234654AC006EFC56 /* PersistenciaCD_BDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersistenciaCD_BDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		32017BA9234654AC006EFC56 /* PersistenciaCD_BDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenciaCD_BDTests.swift; sourceTree = "<group>"; };
+		32017BAB234654AC006EFC56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32017BB0234654AD006EFC56 /* PersistenciaCD_BDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersistenciaCD_BDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		32017BB4234654AD006EFC56 /* PersistenciaCD_BDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenciaCD_BDUITests.swift; sourceTree = "<group>"; };
+		32017BB6234654AD006EFC56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32BD2A602346985000671848 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		32BD2A622346A1C300671848 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32017B8B234654AB006EFC56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32017BA2234654AC006EFC56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32017BAD234654AD006EFC56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32017B85234654AB006EFC56 = {
+			isa = PBXGroup;
+			children = (
+				32017B90234654AB006EFC56 /* PersistenciaCD_BD */,
+				32017BA8234654AC006EFC56 /* PersistenciaCD_BDTests */,
+				32017BB3234654AD006EFC56 /* PersistenciaCD_BDUITests */,
+				32017B8F234654AB006EFC56 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		32017B8F234654AB006EFC56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32017B8E234654AB006EFC56 /* PersistenciaCD_BD.app */,
+				32017BA5234654AC006EFC56 /* PersistenciaCD_BDTests.xctest */,
+				32017BB0234654AD006EFC56 /* PersistenciaCD_BDUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32017B90234654AB006EFC56 /* PersistenciaCD_BD */ = {
+			isa = PBXGroup;
+			children = (
+				32017B91234654AB006EFC56 /* AppDelegate.swift */,
+				32017B93234654AB006EFC56 /* ViewController.swift */,
+				32017B95234654AB006EFC56 /* Main.storyboard */,
+				32017B9B234654AC006EFC56 /* Assets.xcassets */,
+				32017B9D234654AC006EFC56 /* LaunchScreen.storyboard */,
+				32017BA0234654AC006EFC56 /* Info.plist */,
+				32017B98234654AB006EFC56 /* PersistenciaCD_BD.xcdatamodeld */,
+				32BD2A602346985000671848 /* TableViewController.swift */,
+				32BD2A622346A1C300671848 /* EditViewController.swift */,
+			);
+			path = PersistenciaCD_BD;
+			sourceTree = "<group>";
+		};
+		32017BA8234654AC006EFC56 /* PersistenciaCD_BDTests */ = {
+			isa = PBXGroup;
+			children = (
+				32017BA9234654AC006EFC56 /* PersistenciaCD_BDTests.swift */,
+				32017BAB234654AC006EFC56 /* Info.plist */,
+			);
+			path = PersistenciaCD_BDTests;
+			sourceTree = "<group>";
+		};
+		32017BB3234654AD006EFC56 /* PersistenciaCD_BDUITests */ = {
+			isa = PBXGroup;
+			children = (
+				32017BB4234654AD006EFC56 /* PersistenciaCD_BDUITests.swift */,
+				32017BB6234654AD006EFC56 /* Info.plist */,
+			);
+			path = PersistenciaCD_BDUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32017B8D234654AB006EFC56 /* PersistenciaCD_BD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32017BB9234654AD006EFC56 /* Build configuration list for PBXNativeTarget "PersistenciaCD_BD" */;
+			buildPhases = (
+				32017B8A234654AB006EFC56 /* Sources */,
+				32017B8B234654AB006EFC56 /* Frameworks */,
+				32017B8C234654AB006EFC56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PersistenciaCD_BD;
+			productName = PersistenciaCD_BD;
+			productReference = 32017B8E234654AB006EFC56 /* PersistenciaCD_BD.app */;
+			productType = "com.apple.product-type.application";
+		};
+		32017BA4234654AC006EFC56 /* PersistenciaCD_BDTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32017BBC234654AD006EFC56 /* Build configuration list for PBXNativeTarget "PersistenciaCD_BDTests" */;
+			buildPhases = (
+				32017BA1234654AC006EFC56 /* Sources */,
+				32017BA2234654AC006EFC56 /* Frameworks */,
+				32017BA3234654AC006EFC56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32017BA7234654AC006EFC56 /* PBXTargetDependency */,
+			);
+			name = PersistenciaCD_BDTests;
+			productName = PersistenciaCD_BDTests;
+			productReference = 32017BA5234654AC006EFC56 /* PersistenciaCD_BDTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		32017BAF234654AD006EFC56 /* PersistenciaCD_BDUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32017BBF234654AD006EFC56 /* Build configuration list for PBXNativeTarget "PersistenciaCD_BDUITests" */;
+			buildPhases = (
+				32017BAC234654AD006EFC56 /* Sources */,
+				32017BAD234654AD006EFC56 /* Frameworks */,
+				32017BAE234654AD006EFC56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32017BB2234654AD006EFC56 /* PBXTargetDependency */,
+			);
+			name = PersistenciaCD_BDUITests;
+			productName = PersistenciaCD_BDUITests;
+			productReference = 32017BB0234654AD006EFC56 /* PersistenciaCD_BDUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32017B86234654AB006EFC56 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Juian Barco";
+				TargetAttributes = {
+					32017B8D234654AB006EFC56 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					32017BA4234654AC006EFC56 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 32017B8D234654AB006EFC56;
+					};
+					32017BAF234654AD006EFC56 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 32017B8D234654AB006EFC56;
+					};
+				};
+			};
+			buildConfigurationList = 32017B89234654AB006EFC56 /* Build configuration list for PBXProject "PersistenciaCD_BD" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 32017B85234654AB006EFC56;
+			productRefGroup = 32017B8F234654AB006EFC56 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32017B8D234654AB006EFC56 /* PersistenciaCD_BD */,
+				32017BA4234654AC006EFC56 /* PersistenciaCD_BDTests */,
+				32017BAF234654AD006EFC56 /* PersistenciaCD_BDUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32017B8C234654AB006EFC56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32017B9F234654AC006EFC56 /* LaunchScreen.storyboard in Resources */,
+				32017B9C234654AC006EFC56 /* Assets.xcassets in Resources */,
+				32017B97234654AB006EFC56 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32017BA3234654AC006EFC56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32017BAE234654AD006EFC56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32017B8A234654AB006EFC56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32BD2A632346A1C300671848 /* EditViewController.swift in Sources */,
+				32017B9A234654AB006EFC56 /* PersistenciaCD_BD.xcdatamodeld in Sources */,
+				32017B94234654AB006EFC56 /* ViewController.swift in Sources */,
+				32017B92234654AB006EFC56 /* AppDelegate.swift in Sources */,
+				32BD2A612346985000671848 /* TableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32017BA1234654AC006EFC56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32017BAA234654AC006EFC56 /* PersistenciaCD_BDTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32017BAC234654AD006EFC56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32017BB5234654AD006EFC56 /* PersistenciaCD_BDUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		32017BA7234654AC006EFC56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32017B8D234654AB006EFC56 /* PersistenciaCD_BD */;
+			targetProxy = 32017BA6234654AC006EFC56 /* PBXContainerItemProxy */;
+		};
+		32017BB2234654AD006EFC56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32017B8D234654AB006EFC56 /* PersistenciaCD_BD */;
+			targetProxy = 32017BB1234654AD006EFC56 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		32017B95234654AB006EFC56 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32017B96234654AB006EFC56 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		32017B9D234654AC006EFC56 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32017B9E234654AC006EFC56 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		32017BB7234654AD006EFC56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		32017BB8234654AD006EFC56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32017BBA234654AD006EFC56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FLG9SXDPVM;
+				INFOPLIST_FILE = PersistenciaCD_BD/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "courseSwift.persistencia.PersistenciaCD-BD";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		32017BBB234654AD006EFC56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FLG9SXDPVM;
+				INFOPLIST_FILE = PersistenciaCD_BD/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "courseSwift.persistencia.PersistenciaCD-BD";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		32017BBD234654AD006EFC56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FLG9SXDPVM;
+				INFOPLIST_FILE = PersistenciaCD_BDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "courseSwift.persistencia.PersistenciaCD-BDTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PersistenciaCD_BD.app/PersistenciaCD_BD";
+			};
+			name = Debug;
+		};
+		32017BBE234654AD006EFC56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FLG9SXDPVM;
+				INFOPLIST_FILE = PersistenciaCD_BDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "courseSwift.persistencia.PersistenciaCD-BDTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PersistenciaCD_BD.app/PersistenciaCD_BD";
+			};
+			name = Release;
+		};
+		32017BC0234654AD006EFC56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FLG9SXDPVM;
+				INFOPLIST_FILE = PersistenciaCD_BDUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "courseSwift.persistencia.PersistenciaCD-BDUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PersistenciaCD_BD;
+			};
+			name = Debug;
+		};
+		32017BC1234654AD006EFC56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FLG9SXDPVM;
+				INFOPLIST_FILE = PersistenciaCD_BDUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "courseSwift.persistencia.PersistenciaCD-BDUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PersistenciaCD_BD;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32017B89234654AB006EFC56 /* Build configuration list for PBXProject "PersistenciaCD_BD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32017BB7234654AD006EFC56 /* Debug */,
+				32017BB8234654AD006EFC56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32017BB9234654AD006EFC56 /* Build configuration list for PBXNativeTarget "PersistenciaCD_BD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32017BBA234654AD006EFC56 /* Debug */,
+				32017BBB234654AD006EFC56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32017BBC234654AD006EFC56 /* Build configuration list for PBXNativeTarget "PersistenciaCD_BDTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32017BBD234654AD006EFC56 /* Debug */,
+				32017BBE234654AD006EFC56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32017BBF234654AD006EFC56 /* Build configuration list for PBXNativeTarget "PersistenciaCD_BDUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32017BC0234654AD006EFC56 /* Debug */,
+				32017BC1234654AD006EFC56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		32017B98234654AB006EFC56 /* PersistenciaCD_BD.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				32017B99234654AB006EFC56 /* PersistenciaCD_BD.xcdatamodel */,
+			);
+			currentVersion = 32017B99234654AB006EFC56 /* PersistenciaCD_BD.xcdatamodel */;
+			path = PersistenciaCD_BD.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 32017B86234654AB006EFC56 /* Project object */;
+}

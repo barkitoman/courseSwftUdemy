@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LaunchPianoiPad" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="7bh-TS-kE2">
+                                <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="MZa-QQ-2xd">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="502"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="bWl-N4-nZ7">
+                                                <rect key="frame" x="0.0" y="0.0" width="768" height="167.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" alpha="0.5" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j3I-7k-sRf">
+                                                        <rect key="frame" x="0.0" y="0.0" width="256" height="167.5"/>
+                                                        <color key="backgroundColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                        <state key="normal" title="S1">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="reproducirLoop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vZf-lw-KQn"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" alpha="0.5" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Vg-5t-fv7">
+                                                        <rect key="frame" x="256" y="0.0" width="256" height="167.5"/>
+                                                        <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                        <state key="normal" title="S2">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="reproducirLoop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ft6-3d-F35"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" alpha="0.5" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFi-DP-h2C">
+                                                        <rect key="frame" x="512" y="0.0" width="256" height="167.5"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                        <state key="normal" title="S2">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="reproducirLoop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hga-A0-r1b"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="rvv-Ta-5ac">
+                                                <rect key="frame" x="0.0" y="167.5" width="768" height="167"/>
+                                                <subviews>
+                                                    <button opaque="NO" alpha="0.5" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7c-dR-AJZ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="256" height="167"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                        <state key="normal" title="S4">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="reproducirLoop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zLr-US-IgJ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" alpha="0.5" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UQn-iN-Uhe">
+                                                        <rect key="frame" x="256" y="0.0" width="256" height="167"/>
+                                                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                        <state key="normal" title="S5">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="reproducirLoop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MDw-Dr-YGa"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" alpha="0.5" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BhH-bD-gWI">
+                                                        <rect key="frame" x="512" y="0.0" width="256" height="167"/>
+                                                        <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                        <state key="normal" title="S6">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="reproducirLoop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Haz-Tf-QIB"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="YEG-hF-hJW">
+                                                <rect key="frame" x="0.0" y="334.5" width="768" height="167.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" alpha="0.5" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="coz-0A-heT">
+                                                        <rect key="frame" x="0.0" y="0.0" width="256" height="167.5"/>
+                                                        <color key="backgroundColor" red="0.50196078430000002" green="0.74050564240000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                        <state key="normal" title="S7">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="reproducirLoop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Ht-wV-PcY"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" alpha="0.5" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lTk-gD-9lh">
+                                                        <rect key="frame" x="256" y="0.0" width="256" height="167.5"/>
+                                                        <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                        <state key="normal" title="S8">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="reproducirLoop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3IB-BP-TzN"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" alpha="0.5" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ifu-N9-o9n">
+                                                        <rect key="frame" x="512" y="0.0" width="256" height="167.5"/>
+                                                        <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                        <state key="normal" title="S9">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="reproducirLoop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e31-HY-aRI"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="jhI-VQ-8uV">
+                                        <rect key="frame" x="0.0" y="502" width="768" height="502"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftA-zh-nB1">
+                                                <rect key="frame" x="0.0" y="0.0" width="93.5" height="502"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                <state key="normal" title="DO">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="piano:" destination="BYZ-38-t0r" eventType="touchDown" id="hgx-fq-Ywx"/>
+                                                    <action selector="soltarTecla:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4QS-hc-qoQ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A81-8Z-UOL">
+                                                <rect key="frame" x="96.5" y="0.0" width="93.5" height="502"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                <state key="normal" title="RE">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="piano:" destination="BYZ-38-t0r" eventType="touchDown" id="xgf-Zh-Y0c"/>
+                                                    <action selector="soltarTecla:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nec-Fc-9Vu"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVB-pE-bEG">
+                                                <rect key="frame" x="193" y="0.0" width="93" height="502"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                <state key="normal" title="MI">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="piano:" destination="BYZ-38-t0r" eventType="touchDown" id="XaH-ZS-5V7"/>
+                                                    <action selector="soltarTecla:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1cK-eR-hsd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z0J-gh-TaW">
+                                                <rect key="frame" x="289" y="0.0" width="93.5" height="502"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                <state key="normal" title="FA">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="piano:" destination="BYZ-38-t0r" eventType="touchDown" id="c5i-2c-gJ2"/>
+                                                    <action selector="soltarTecla:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aRx-f2-4gq"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jkI-D6-lmV">
+                                                <rect key="frame" x="385.5" y="0.0" width="93.5" height="502"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                <state key="normal" title="SOL">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="piano:" destination="BYZ-38-t0r" eventType="touchDown" id="6aN-3K-2Iy"/>
+                                                    <action selector="soltarTecla:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gWy-8H-xKY"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hq-0y-WDm">
+                                                <rect key="frame" x="482" y="0.0" width="93.5" height="502"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                <state key="normal" title="LA">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="piano:" destination="BYZ-38-t0r" eventType="touchDown" id="n4F-VD-k2i"/>
+                                                    <action selector="soltarTecla:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KFz-s7-O7s"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rzb-h5-Jnq">
+                                                <rect key="frame" x="578.5" y="0.0" width="93" height="502"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                <state key="normal" title="SI">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="piano:" destination="BYZ-38-t0r" eventType="touchDown" id="wsF-ig-GPG"/>
+                                                    <action selector="soltarTecla:" destination="BYZ-38-t0r" eventType="touchUpInside" id="evl-qh-7Pn"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ycw-gp-wex">
+                                                <rect key="frame" x="674.5" y="0.0" width="93.5" height="502"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                <state key="normal" title="DO">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="piano:" destination="BYZ-38-t0r" eventType="touchDown" id="WNP-25-do0"/>
+                                                    <action selector="soltarTecla:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bzB-Iz-3ET"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7bh-TS-kE2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="abb-n1-XfG"/>
+                            <constraint firstItem="7bh-TS-kE2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kAM-OB-Cyo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7bh-TS-kE2" secondAttribute="trailing" id="rG2-NJ-dBs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7bh-TS-kE2" secondAttribute="bottom" id="vTI-xO-8Po"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="launchStack" destination="MZa-QQ-2xd" id="Bod-fI-QWI"/>
+                        <outlet property="pianoStack" destination="jhI-VQ-8uV" id="CqY-iK-7ab"/>
+                        <outletCollection property="sonido" destination="j3I-7k-sRf" collectionClass="NSMutableArray" id="wcp-fv-hxy"/>
+                        <outletCollection property="sonido" destination="7Vg-5t-fv7" collectionClass="NSMutableArray" id="u8S-wL-ZFF"/>
+                        <outletCollection property="sonido" destination="tFi-DP-h2C" collectionClass="NSMutableArray" id="fag-vv-Orq"/>
+                        <outletCollection property="sonido" destination="C7c-dR-AJZ" collectionClass="NSMutableArray" id="Bh4-pT-rh1"/>
+                        <outletCollection property="sonido" destination="UQn-iN-Uhe" collectionClass="NSMutableArray" id="ZLg-L5-Du2"/>
+                        <outletCollection property="sonido" destination="BhH-bD-gWI" collectionClass="NSMutableArray" id="gRR-Mv-liP"/>
+                        <outletCollection property="sonido" destination="coz-0A-heT" collectionClass="NSMutableArray" id="8Mu-rP-pqA"/>
+                        <outletCollection property="sonido" destination="lTk-gD-9lh" collectionClass="NSMutableArray" id="Tb8-DA-U1S"/>
+                        <outletCollection property="sonido" destination="Ifu-N9-o9n" collectionClass="NSMutableArray" id="AFt-rF-dgE"/>
+                        <outletCollection property="nota" destination="ftA-zh-nB1" collectionClass="NSMutableArray" id="h9r-iA-bp2"/>
+                        <outletCollection property="nota" destination="A81-8Z-UOL" collectionClass="NSMutableArray" id="GWA-b5-tQb"/>
+                        <outletCollection property="nota" destination="RVB-pE-bEG" collectionClass="NSMutableArray" id="P0b-vt-apK"/>
+                        <outletCollection property="nota" destination="Z0J-gh-TaW" collectionClass="NSMutableArray" id="itf-1z-pEe"/>
+                        <outletCollection property="nota" destination="jkI-D6-lmV" collectionClass="NSMutableArray" id="M9L-HX-ifw"/>
+                        <outletCollection property="nota" destination="2hq-0y-WDm" collectionClass="NSMutableArray" id="4tP-8e-jKc"/>
+                        <outletCollection property="nota" destination="Rzb-h5-Jnq" collectionClass="NSMutableArray" id="6fO-2z-Oln"/>
+                        <outletCollection property="nota" destination="Ycw-gp-wex" collectionClass="NSMutableArray" id="Qk0-b1-G5A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-82.03125" y="127.73437499999999"/>
+        </scene>
+    </scenes>
+</document>
