@@ -41,9 +41,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSCameraUsageDescription</key>
-	<string>Use camera for notes</string>
-	<key>NSAppleMusicUsageDescription</key>
-	<string>Use Library for notes</string>
 </dict>
 </plist>
